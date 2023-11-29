@@ -3,7 +3,7 @@ let mssql = require('mssql');
 let connection = {
   user: 'sa',
   password: 'free',
-  server: 'localhost',
+  server: 'AFONSO-BARB',
   database: 'ads'
 }
 
