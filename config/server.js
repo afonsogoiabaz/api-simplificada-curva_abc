@@ -1,5 +1,5 @@
 let express = require('express');
-const consign = require('consign');
+let consign = require('consign');
 let bodyParser = require('body-parser');
 
 let app = express();
@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 consign()
 .include('app/routes')
-.then('config/dbConnection.js')
-.then('app/models')
+// .then('config/dbConnection.js')
+// .then('app/models')
 .then('app/controllers')
 .into(app);
 
