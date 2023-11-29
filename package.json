@@ -1,0 +1,16 @@
+{
+  "name": "api-relatorio",
+  "version": "1.0.0",
+  "description": "api de teste para relatório de curva abc em grafico do sistema ads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "afonso barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "consign": "^0.1.6",
+    "express": "^4.18.2"
+  }
+}
