@@ -1,10 +1,12 @@
 let express = require('express');
 let bodyParser = require('body-parser');
+let cors = require ('cors');
 
 let app = express();
 app.set('view engine', 'json');
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 
 
 app.get('/', function (req, res) {
@@ -53,7 +55,7 @@ app.get('/', function (req, res) {
     function (err, results) {
       if (err) console.log(err)
 
-      res.send(results.recordsets);
+      res.send(results.recordset);
     });
   });
 });
